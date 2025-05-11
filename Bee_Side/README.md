@@ -34,7 +34,7 @@ A honey-themed landing page with a rock concert aesthetic — a creative explora
 
 ## 📸 Preview
 
-<img src="./WIPs/Honey_layout.jpeg" alt="Layout Preview" width="600"/>
+<img src="./WIPs/Honey_layout.jpeg" alt="Layout Preview" width="600" height="900"/>
 
 ## 🔗 Live Demo
 
