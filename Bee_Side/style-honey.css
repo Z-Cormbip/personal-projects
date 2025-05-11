@@ -1,0 +1,241 @@
+:root {
+    --text: #2e335e;
+    --primary: #FFD52B;
+    --accent: #BE3900;
+    --stroke: #FDFBEF;
+    --bold: 'Chelsea Market', Sans-serif;
+    --wacky: 'Barriecito', Serif;
+    --script: 'Tillana', Serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* outline: dashed 1px var(--accent); */
+}
+
+body {
+    position:relative;
+    background-color: #F5E7CA;
+    overflow-x: hidden;
+}
+
+.doodles {
+    position: absolute;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    opacity: 0.8;
+    pointer-events: none;
+    &>img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    &>.logo {
+        flex: 3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        padding: 1rem 1rem 2.5rem 1.5rem;
+        margin: 1.5rem 0 0;
+        gap: .3rem;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-color: var(--primary);
+            border-radius: 11% 10% 8% 83% / 5% 12% 6% 82%;
+            width: 100%;
+            margin: 0 auto;
+        }
+        &>h1 {
+            font-family: 'chelsea Market', sans-serif;
+            font-size: clamp(2.2rem, 0.6147rem + 5.2844vw, 4rem);
+            color: var(--text);
+            display: inline-block;
+            transform: scaleX(1.05);
+            word-spacing: -0.5rem;
+            -webkit-text-stroke: 1px var(--text);
+            }
+        &>h2 {
+            font-family: 'Tillana', serif;
+            font-size: clamp(1.4rem, 0.4312rem + 3.2294vw, 2.5rem);
+            color: var(--accent);
+            text-align: center;
+            transform: scaleX(1.03);
+            word-spacing: .2rem;
+            }
+        }
+        /* UP LEFT TRIANGLE*/
+    &>.nav {
+        flex: 2;
+        position: relative;
+        &::before{
+                content: "";
+                position: absolute;
+                inset: 0;
+                width: 0;
+                height: 0;
+                border-top: clamp(8.2rem, 1.3303rem + 22.8991vw, 16rem) solid var(--accent);
+                border-right: clamp(8.2rem, 1.3303rem + 22.8991vw, 16rem) solid transparent;
+            }
+        }
+        
+    }
+
+
+.sec-hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1rem 0 0;
+    width: 100%;
+    height: auto;
+    &>.hero{
+        z-index: 1;
+        flex: 3;
+        &>img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    &>.live {
+        font-family: 'Barriecito', serif; 
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        transform: rotate(5deg) scaleY(1.2);
+        flex: 1;
+        height: auto;
+        gap: .3rem;
+        color: var(--text);
+        text-align: center;
+        &>h2 {
+            font-size: clamp(1.8rem, 1.1835rem + 2.055vw, 2.5rem);
+            font-weight: 400;
+            &>.fill{
+                background-color: var(--primary);
+                border-radius: 13% 22% 11% 40% / 43% 23% 11% 11%;
+                padding: 0 .2rem;
+            }
+        }
+        &>h3 {
+            font-size: clamp(1.2rem, 0.2431rem + 3.5229vw, 2.5rem);
+            font-weight: 400;
+            &>.fill{
+                background-color: var(--primary);
+                border-radius: 30% 12% 12% 49% / 34% 42% 11% 26%;
+                padding: 0 .2rem;
+            }
+        }
+    }
+}
+
+.sec-label {
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-color: var(--primary);
+        border-radius: 0% 100% 100% 0% / 50% 50% 50% 50%;
+        transform: scaleY(1.2);
+        z-index: -1;
+    }
+    &>.label {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        &>.beehole {
+            flex: 2;
+            z-index: 1;
+            &>img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        &>.txt-container {
+            display: flex;
+            flex-direction: column;
+            margin: 2rem 0 2rem 1rem;
+            flex: 3;
+            gap: 2rem;
+            &>.tags {
+                font-family: 'Barriecito', serif;
+                color: var(--text);
+                padding-left: .2rem;
+                &>h2 {
+                    font-size: clamp(1.3rem, 0.2431rem + 3.5229vw, 2.5rem);
+                    font-weight: 400;
+                    &:nth-child(2) {
+                        padding: 0 0 0 .6rem;
+                    }
+                    &>.fill {
+                        color: var(--primary);
+                        background-color: var(--text);
+                        border-radius: 48% 20% 8% 45% / 10% 30% 9% 16%;
+                        padding: 0 .2rem;
+                    }
+                }
+            }
+            &>.script {
+                font-family: 'Tillana', serif;
+                color: var(--text);
+                text-align: left;
+                &>.accent {
+                    color: var(--accent);
+                    &>h2 {
+                        font-size: clamp(1rem, -0.3211rem + 4.4037vw, 2.5rem);
+                        font-weight: 600;
+                    }
+                }
+                &>h2 {
+                    font-size: clamp(1rem, -0.3211rem + 4.4037vw, 2.5rem);
+                    font-weight: 600;
+                }
+            }
+        }
+    }   
+}
+
+.cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &>a {
+        text-decoration: none;
+        cursor: pointer;
+    }
+    &>.cta-btn{
+        background-color: var(--accent);
+        text-align: center;
+        padding: .5rem 2.3rem;
+        clip-path: polygon(0 37%, 5% 12%, 0 0, 100% 0, 95% 29%, 100% 40%, 100% 61%, 93% 90%, 100% 100%, 0 100%, 8% 88%, 0 72%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transform: rotate(-5deg);
+        &>p {
+            flex-wrap: wrap;
+            font-family: 'Chelsea Market', sans-serif;
+            font-size: clamp(1.4rem, -11.4587rem + 42.8624vw, 3rem);
+            color: var(--stroke);
+            font-weight: 600;
+        }
+    }
+}
