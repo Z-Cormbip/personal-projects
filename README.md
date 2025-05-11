@@ -1,6 +1,6 @@
 # 🧪 Generated Random Projects
 
-A collection of front-end projects I built from scratch to learn HTML, CSS, and responsive design. Each folder contains a different webpage inspired by random prompts or themes.
+A collection of front-end projects I built from scratch to learn HTML, CSS, and JavaScript. Each folder contains a different webpage inspired by random prompts or themes.
 
 ## 📚 Project List
 
