@@ -32,7 +32,11 @@ A whiskey-themed landing page layout designed to explore full-page structure, vi
 
 ## 📸 Preview
 
-<img src="./Layout/Veritable_layouts.jpeg" alt="Layout Preview" width="400"/>
+<p align="center">
+  <img src="./Layout/Whiskey_Layout.jpeg" alt="Whiskey Desktop Layout" width="30%" />
+  <img src="./Layout/W.tablet.jpeg" alt="Whiskey Tablet Layout" width="30%" />
+  <img src="./Layout/W.phone.jpeg" alt="Whiskey Phone Layout" width="30%" />
+</p>
 
 ## 🔗 Live Demo
 
