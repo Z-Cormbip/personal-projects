@@ -34,7 +34,20 @@ A honey-themed landing page with a rock concert aesthetic — a creative explora
 
 ## 📸 Preview
 
-<img src="./WIPs/Honey_layout.jpeg" alt="Layout Preview" width="300"/>
+<p align="center">
+  <div style="display: inline-block; text-align: center; margin: 0 10px;">
+    <p><strong>Sketch</strong></p>
+    <img src="./WIPs/Sketch.jpeg" alt="Bee Side Layout Sketch" width="25%" />
+  </div>
+  <div style="display: inline-block; text-align: center; margin: 0 10px;">
+    <p><strong>Refine</strong></p>
+    <img src="./WIPs/Refine.jpeg" alt="Bee Side Layout Refine" width="25%" />
+  </div>
+  <div style="display: inline-block; text-align: center; margin: 0 10px;">
+    <p><strong>Adapt</strong></p>
+    <img src="./WIPs/Adapt.jpeg" alt="Bee Side Layout Adapt" width="25%" />
+  </div>
+</p>
 
 ## 🔗 Live Demo
 
