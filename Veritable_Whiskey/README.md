@@ -33,9 +33,9 @@ A whiskey-themed landing page layout designed to explore full-page structure, vi
 ## 📸 Preview
 
 <p align="center">
-  <img src="./Layout/Whiskey_Layout.jpeg" alt="Whiskey Desktop Layout" height="600px" />
-  <img src="./Layout/W.tablet.jpeg" alt="Whiskey Tablet Layout" height="480px" />
-  <img src="./Layout/W.phone.jpeg" alt="Whiskey Phone Layout" height="360px" />
+  <img src="./Layout/Whiskey_Layout.jpeg" alt="Whiskey Desktop Layout" height="900px" />
+  <img src="./Layout/W.tablet.jpeg" alt="Whiskey Tablet Layout" height="640px" />
+  <img src="./Layout/W.phone.jpeg" alt="Whiskey Phone Layout" height="480px" />
 </p>
 
 ## 🔗 Live Demo
