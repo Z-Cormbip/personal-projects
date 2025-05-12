@@ -37,8 +37,8 @@ A coffee-themed, minimalist layout — my first attempt at building a webpage us
 ## 🔗 Live Demo
 
 - [Figma Design](https://www.figma.com/design/92VIakhv5NP5rtJ92STM2i/Coffee---Whiskey?m=auto&t=6PYGkzoQlVAESRJ9-1)  
-- [CodePen Demo](https://your-codepen-link)  
-- [GitHub Pages (if hosted)](https://your-github-pages-link)
+- [CodePen Demo](https://codepen.io/Cormbip/pen/qEEQpgo)  
+- [GitHub Pages (if hosted)](https://github.com/Z-Cormbip/Generated_Random_Projects/tree/e861045e5fc3f22e91ec3541b7e5909bd04a40b8/Coffee_Pilgrims)
 
 ## 🚧 Challenges
 
