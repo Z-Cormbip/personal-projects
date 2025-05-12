@@ -52,7 +52,7 @@ A honey-themed landing page with a rock concert aesthetic — a creative explora
 ## 🔗 Live Demo
 
 - [Figma Design](https://www.figma.com/design/wxIlIEUMimOsJGlVPh7zXS/Bee-Side?m=auto&t=6PYGkzoQlVAESRJ9-1)  
-- [CodePen Demo](https://your-codepen-link)  
+- [CodePen Demo](https://codepen.io/Cormbip/pen/dPPQjGo)  
 - [GitHub Pages (if hosted)](https://github.com/Z-Cormbip/Generated_Random_Projects/tree/02778a8cc7f8417e2b3ca2fb55b0a9158211c726/Bee_Side)
 
 ## 🚧 Challenges
