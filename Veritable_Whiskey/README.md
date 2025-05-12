@@ -37,8 +37,8 @@ A whiskey-themed landing page layout designed to explore full-page structure, vi
 ## 🔗 Live Demo
 
 - [Figma Design](https://www.figma.com/design/92VIakhv5NP5rtJ92STM2i/Coffee---Whiskey?m=auto&t=6PYGkzoQlVAESRJ9-1)  
-- [CodePen Demo](https://your-codepen-link)  
-- [GitHub Pages (if hosted)](https://your-github-pages-link)
+- [CodePen Demo](https://codepen.io/Cormbip/pen/xbbQYPQ) 
+- [GitHub Pages (if hosted)](https://github.com/Z-Cormbip/Generated_Random_Projects/tree/fb558586456241e69d92d60174f6345de488779c/Veritable_Whiskey)
 
 ## 🚧 Challenges
 
