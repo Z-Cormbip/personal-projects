@@ -26,3 +26,7 @@ Design a web layout for a fictional line of gourmet popcorn products using their
 - `#a5b6cb` is a cool tone — between navy and pastel — offering calmness with personality
 - Aim for a playful, curvy design aesthetic that fits a popcorn brand
 - Consider the context of popcorn: movies, TV nights, fun, and relaxation
+
+## 🔗 Live Demo
+
+- [Figma Design](https://www.figma.com/design/RJBbMxvZJcGmynEvpVQLz1/Popcorn_Project?m=auto&t=ekOGfjJ1hZSuXUR5-1)  
