@@ -29,4 +29,11 @@ Design a web layout for a fictional line of gourmet popcorn products using their
 
 ## 🔗 Live Demo
 
-- [Figma Design](https://www.figma.com/design/RJBbMxvZJcGmynEvpVQLz1/Popcorn_Project?m=auto&t=ekOGfjJ1hZSuXUR5-1)  
+- [Figma Design](https://www.figma.com/design/RJBbMxvZJcGmynEvpVQLz1/Popcorn_Project?m=auto&t=ekOGfjJ1hZSuXUR5-1)
+
+## 📝 Plans
+- Search for grid layout for mobile and touchpoint for buttons
+- Contrast between simple and patterned design
+- List of flavors and a color palette that represents every flavor
+- Footer contents on top of the bowl of popcorns
+- Elegant looking popcorn icon
