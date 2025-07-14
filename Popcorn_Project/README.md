@@ -1,31 +1,18 @@
-# 🍿 Project Title: Gourmet Popcorn Website
+# 🍿 Project Title: Velvet Kernel
 
 ## 📄 Project Type
 
 Design a web layout for a fictional line of gourmet popcorn products using their brand color `#a5b6cb` (Cadet Blue, 80% value).
 
 > **📸 Image Disclaimer**  
-> *I do not own the rights to all images or illustrations used in this project. They are included strictly for educational and demonstration purposes. All image credits go to the original creators: (TBD)*
+> *I do not own the rights to all images or illustrations used in this project. They are included strictly for educational and demonstration purposes. All image credits go to the original creators: [Garrett Popcorn](https://www.garrettpopcorn.com/)*
 
-## 👁️‍🗨️ Project Focus
+### 🛠️ Technology & Design
 
-- Simpler, more maintainable design-to-code workflows
-- Build more projects using random creative prompts
-- Begin exploring JavaScript for interactivity and behavior
-
-## 🧪 Design Formula
-
-- Start with layout wireframes (boxes and typography only)
-- Design a few standout elements (logo, CTA, hero sections)
-- Keep layout modular — reusable components with minimal overrides
-- Optionally use BEM naming or a utility framework like Tailwind CSS
-- Define and stick to a style system (spacing, fonts, colors)
-
-## 🎨 Creative Exploration
-
-- `#a5b6cb` is a cool tone — between navy and pastel — offering calmness with personality
-- Aim for a playful, curvy design aesthetic that fits a popcorn brand
-- Consider the context of popcorn: movies, TV nights, fun, and relaxation
+- Figma’s grid layout and wireframing tools  
+- Figma's prototype feature for simulating touch interactions  
+- Adobe Photoshop for color grading and visual effects (gradient maps, filters)  
+- SVG optimization using SVGOMG and Figma plugins
 
 ## 🔗 Live Demo
 
