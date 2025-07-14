@@ -21,4 +21,5 @@ Each project includes:
 
 - Practice clean, semantic HTML
 - Improve responsive CSS layouts
+- Learn JavaScript and its tools
 - Build a solid developer portfolio
