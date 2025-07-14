@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velvet Kernel</title>
+    <link rel="stylesheet" href="./CSS/style-kernel.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=boska@700,900&f[]=switzer@300,301,400,401,500&display=swap" rel="stylesheet">
+    <script src="./JS/components.js" defer></script>
+    <script src="./JS/script-main.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <button class="left-menu-btn" aria-label="Open menu left overlay window">
+                <svg width="35" height="35" class="three-bars-menu">
+                    <use href="./Assets/icons.svg#three-bars-menu" />
+                </svg>
+            </button>
+            <button>
+                <a href="store-locator.html" class="store-icon" aria-label="Go to store locator">
+                    <svg width="35" height="35" class="nav-stroke-pin">
+                        <use href="Assets/icons.svg#stroke-map-pin" />
+                    </svg>
+                </a>
+            </button>
+            <button class="right-bag-btn" aria-label="Open shopping bag right overlay window">
+                <svg width="35" height="35" class="shopping-bag-icon">
+                    <use href="Assets/icons.svg#stroke-shopping-bag" />
+                </svg>
+            </button>
+        </nav>
+        <div class="hero-wrapper">
+            <h1 class="logo1">
+                <img src="Assets/Compressed/SVG/Logo-shadow.svg" alt="Velvet Kernel Logo">
+            </h1>
+            <div class="hero-img">
+                <img src="Assets/Compressed/header-hero.png" alt="person snacking on velvet kernel popcorn">
+                <div class="brand-bars">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </div>
+        <div class="header-msg">
+            <div class="headerPitch">
+                <p>Indulgence</p>
+                <p>in every crunch.</p>
+            </div>
+            <button aria-label="Scroll down" class="chevron-btn">
+                <svg width="45" height="45" viewBox="0 0 24 24" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="1.5"
+                    stroke-linecap="square" stroke-linejoin="square"/>
+                </svg>
+            </button>              
+        </div>
+    </header>
+    <section class="section-1">
+        <div class="s2-main">
+            <aside class="asideBar" aria-hidden="true">
+                <div class="brand-bars2">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <ul class="aside-spoons">
+                    <li><img src="Assets/Compressed/aside/plain.png" alt=""></li>
+                    <li><img src="Assets/Compressed/aside/matcha.png" alt=""></li>
+                    <li><img src="Assets/Compressed/aside/caramel.png" alt=""></li>
+                </ul>
+            </aside>
+            <div class="s1-article">
+                <figure class="s1-img">
+                    <img src="Assets/Compressed/section-1/hero.png" alt="a bowl of popcorns">
+                    <figcaption>
+                        <p>Kernel blends 
+                            <span class="strong">classic comfort</span> with 
+                            <span class="strong">gourmet flair</span>.
+                        Crafted for those who snack with style.</p>
+                    </figcaption>
+                </figure>
+                <button class="explore-flavors" id="ctaBttn" aria-label="Go to product page">Explore Flavors</button>
+            </div>
+        </div>
+        <div class="s2-msg">
+            <h2>"Crafted to Crave."</h2>
+            <p>A 
+                <span class="italics">symphony of flavors</span>, 
+                thoughtfully curated for the 
+                <span class="italics">modern snacker</span>.</p>
+        </div>
+    </section>
+    <main class="main-shop">
+        <div class="flavor">
+            <div class="flavor-info">
+                <h2>Buttery</h2>
+                <p>
+                    A <span class="italics">warm buttery</span>  finish with
+                    a <span class="italics">pinch of salt</span>.
+                </p>
+            </div>
+            <button aria-label="slide to right carousel" class="chevron-btn-right">
+                <svg width="45" height="45">
+                    <use href="./Assets/icons.svg#chevron-right"></use>
+                </svg>                  
+            </button>
+        </div>
+        <div class="product">
+            <img src="Assets/Compressed/main/product-bowl.png" alt="Velvet Kernel Buttery Popcorn">
+            <div class="price">
+                <p>$19.99</p>
+            </div>
+            <div class="brand-bars3" aria-hidden="true">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+        <div class="buttons-shop">
+            <div class="amount-btn">
+                <button class="minus" aria-label="decrease quantity" type="button">-</button>
+                <input type="number" value="1" min="1" max="9" id="amount" aria-label="selected quantity">
+                <button class="plus" aria-label="increase quantity" type="button">+</button>
+            </div>
+            <button class="add-to-bag">Add to bag</button>
+        </div>
+        <div class="product-info">
+            <p>“Light & Crispy · Bold & Savory”</p>
+            <ul class="tags">
+                <li>Gluten-free</li>
+                <li>Non-GMO</li>
+                <li>0% trans fat</li>
+            </ul>
+        </div>
+        <div class="recipe-details">
+            <h2>Recipe Details</h2>
+            <button aria-label="Open recipe details window" class="chevron-btn-up">
+                <svg width="45" height="45" viewBox="0 0 24 24" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6 15L12 9L18 15" stroke="currentColor" stroke-width="1.5"
+                    stroke-linecap="square" stroke-linejoin="square"/>
+                </svg>
+            </button>  
+        </div>
+    </main>
+    <div class="ratingComment">
+        <ul class="rating" aria-label="Product Rating">
+            <li>★</li>
+            <li>★</li>
+            <li>★</li>
+            <li>★</li>
+            <li>★</li>
+        </ul>
+        <div class="comment">
+            <p>“The best butter crunch I’ve ever had.<br/>
+                I hide the bag from my kids!”</p>
+                <p>— Alyssa R.</p>
+            </div>
+        </div>
+    </div>
+    <section class="section-2">
+        <div class="s2-article">
+            <figure class="s2-img">
+                <img src="Assets/Compressed/section-2/hero.png" alt="An employee mixing popcorns">
+                <figcaption>
+                    <p>
+                        We pop our 
+                        <span class="strong">delicious, handcrafted</span> recipes in <br/>
+                        <span class="strong">small batches</span> every single morning.
+                    </p>
+                </figcaption>
+            </figure>
+            <button class="shop-now">Shop Now</button>
+        </div>
+        <aside class="asideBar2" aria-hidden="true">
+            <div class="brand-bars">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="aside-imgs">
+                <li><img src="Assets/Compressed/aside/salt.png" alt=""></li>
+                <li><img src="Assets/Compressed/aside/butter_cup.png" alt=""></li>
+                <li><img src="Assets/Compressed/aside/pop.png" alt=""></li>
+            </ul>
+        </aside>
+    </section>
+    <article class="closing-section">
+        <div class="article-msg">
+            <p>Thanks for snacking with us.</p>
+            <p>Every handful, a little luxury.</p>
+        </div>
+        <div class="article-img">
+            <div class="brand-bars" aria-hidden="true">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <img src="Assets/Compressed/article/hero.png" alt="person offering a handful of popcorns">
+        </div>
+    </article>
+    <footer class="footer">
+        <div class="contact-us">
+            <h2>Contact Us</h2>
+            <p>
+                <span><img src="Assets/Compressed/SVG/footer-icons/phone-icon-light.svg" alt=""></span>
+                123-456-7890
+            </p>
+            <p>
+                <span>
+                    <img src="Assets/Compressed/SVG/footer-icons/mail-icon-light.svg" alt="">
+                </span>
+                support@velvetkernel.com
+            </p>
+        </div>
+        <button aria-label="Scroll to the top" class="double-chevron-btn">
+            <svg width="45" height="45">
+                <use href="./Assets/icons.svg#dbl-chevron-up" />
+            </svg>
+        </button>
+        <div class="lightLogo" aria-hidden="true">
+            <img src="./Assets/Compressed/SVG/lightLogo.svg" alt="">
+        </div>
+        <div class="socials-container">
+            <ul class="socials" aria-label="Social Media Links">
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Tiktok</a></li>
+                <li><a href="#">Facebook</a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- left nav window overlay -->
+    <div class="left-overlay-wrapper is-closed">
+        <aside class="left-overlay-window">
+            <div class="left-overlay-bar">
+                <button class="x-icon-container" aria-label="Close overlay window">
+                    <svg width="35" height="35" class="aside-x-bttn">
+                        <use href="./Assets/icons.svg#x-mark" />
+                    </svg>
+                </button>
+            </div>
+            <ul class="overlay-menu-btns">
+                <li>
+                    <a href="#">Why Velvet Kernel?</a>
+                    <button aria-label="Go to Explore Flavors page" class="overlay-btn-right">
+                        <svg width="45" height="45">
+                            <use href="./Assets/icons.svg#chevron-right"></use>
+                        </svg>
+                    </button>
+                </li>
+                <li>
+                    <a href="#">The Pop Process</a>
+                    <button aria-label="Go to Process page" class="overlay-btn-right">
+                        <svg width="45" height="45">
+                            <use href="./Assets/icons.svg#chevron-right"></use>
+                        </svg>
+                    </button>
+                </li>
+                <li>
+                    <a href="#">Store Locator</a>
+                    <button aria-label="Go to Store Locator" class="overlay-btn-right">
+                        <svg width="45" height="45">
+                            <use href="./Assets/icons.svg#chevron-right"></use>
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+            <button class="left-overlay-btn" aria-label="Go to Product page">Shop Now</button>
+            <div class="left-overlay-contacts">
+                <div class="contact-info">
+                    <p>123-456-7890</p>
+                    <p>support@velvetkernel.com</p>
+                </div>
+                <img src="./Assets/Compressed/left-overlay/bowl-footer.png" aria-hidden="true"
+                    aria-label="left window overlay close button" alt="">
+            </div>
+        </aside>
+    </div>
+</body>
+</html>
