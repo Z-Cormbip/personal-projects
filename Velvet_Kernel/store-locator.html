@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store Locator</title>
+    <link rel="stylesheet" href="./CSS/style-kernel.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=boska@700,900&f[]=switzer@300,301,400,401,500&display=swap" rel="stylesheet">
+    <script src="./JS/components.js" defer></script>
+    <script src="./JS/store-locator.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <button class="left-menu-btn" aria-label="Open menu left overlay window">
+                <svg width="35" height="35" class="three-bars-menu">
+                    <use href="./Assets/icons.svg#three-bars-menu"/>
+                </svg>
+            </button>
+            <button>
+                <a href="velvet-kernel.html" class="store-icon" aria-label="Go back to homepage">
+                    <svg width="35" height="35" class="nav-fill-pin">
+                        <use href="./Assets/icons.svg#fill-map-pin"/>
+                    </svg>
+                </a>
+            </button>
+            <button class="right-bag-btn" aria-label="Open shopping bag right overlay window">
+                <svg width="35" height="35" class="shopping-bag-icon">
+                    <use href="./Assets/icons.svg#stroke-shopping-bag"/>
+                </svg>
+            </button>
+        </nav>
+    </header>
+    <div class="store-locator-window">
+        <div class="current-location-container">
+            <svg class="red-map-pin" width="40" height="40" aria-hidden="true">
+                <use href="./Assets/icons.svg#fill-map-pin"/>
+            </svg>              
+            <div class="current-location-wrapper">
+                <p>Your current location</p>
+                <h1 class="current-location">Chicago, IL US</h1>
+            </div>
+        </div>
+        <div class="location-search-container">
+            <div class="location-searchbox">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="magnifying-icon" width="20" height="20" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M9 3.5a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11ZM2 9a7 7 0 1 1 12.452 4.391l3.328 3.329a.75.75 0 1 1-1.06 1.06l-3.329-3.328A7 7 0 0 1 2 9Z" clip-rule="evenodd" />
+                </svg>        
+                <input id="inputLocation" class="input-location" type="text" aria-label="Enter a location" placeholder=" Enter a location">
+            </div>
+            <!-- location searchbox extension -->
+            <div class="searchbox-extension">
+                <button class="locate-me" aria-label="Use your current location">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.5" stroke-linecap="square" stroke-linejoin="square">
+                        <line x1="2" x2="5" y1="12" y2="12" />
+                        <line x1="19" x2="22" y1="12" y2="12" />
+                        <line x1="12" x2="12" y1="2" y2="5" />
+                        <line x1="12" x2="12" y1="19" y2="22" />
+                        <circle cx="12" cy="12" r="7" />
+                        <circle cx="12" cy="12" r="3"/>
+                    </svg>
+                    Use my location
+                </button>
+                <ul class="suggested-locations" aria-label="List of suggested locations">
+                    <li>
+                        <svg class="grayed-out-pin" width="18" height="18">
+                            <use href="./Assets/icons.svg#fill-map-pin" />
+                        </svg>
+                        <p>Grand Ave, Chicago, IL US</p>
+                    </li>
+                    <li>
+                        <svg class="grayed-out-pin" width="18" height="18">
+                            <use href="./Assets/icons.svg#fill-map-pin" />  
+                        </svg>
+                        <p>Jackson Blvd, Chicago, IL US</p>
+                    </li>
+                    <li>
+                        <svg class="grayed-out-pin" width="18" height="18">
+                            <use href="./Assets/icons.svg#fill-map-pin" />
+                        </svg>
+                        <p>Michigan Ave, Chicago, IL US</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- This map is a mock UI. Replace with Maps API in production. -->
+    <section class="store-map-container">
+        <div class="map-wrapper">
+            <img src="./Assets/Compressed/store-locator/cropped-map.jpg" class="store-map" alt="Map of store locations">
+            <!-- Snack Shop Card -->
+            <div class="store-pin-wrapper" data-store="snackShop" data-pin-default="snackShop" style="top: 56%; left: 38%;">
+                <button class="store-pin" aria-label="Open Jackson Dearborn's Snack Shop details card">
+                    <img src="./Assets/Compressed/store-locator/store-pin.png" alt="">
+                </button>
+            </div>
+            <div class="card-null-point" style="top:8%; left:14%">
+                <div class="store-details-card hidden" data-card="snackShop" data-store="snackShop" aria-label="Snack Shop details in cards">
+                    <div class="store-card-grid">
+                        <div class="store-card-name">
+                            <h3>
+                                <span>Jackson &</span>
+                                <span>Dearborn's</span>
+                                <span>Snack Shop</span>
+                            </h3>
+                            <p>Authorized Retailer</p>
+                        </div>
+                        <div class="card-distance-marker">
+                            <svg width="27" height="8" class="distance-marker-icon"
+                                aria-label="Distance from location to Jackson & Dearborn's Snack Shop">
+                                <use href="./Assets/icons.svg#distance-marker" />
+                            </svg>
+                            <p>1.1 mi</p>
+                        </div>
+                        <button class="x-mark-container" aria-label="Close store details card"
+                        data-store="snackShop">
+                            <svg width="16" height="16" class="x-mark-icon">
+                                <use href="./Assets/icons.svg#x-mark" />
+                            </svg>
+                        </button>
+                        <div class="image-slice-container">
+                            <img src="./Assets/Compressed/store-locator/snackshop-cropped.png" alt="Jackson Dearborn's Snack Shop">
+                            <a href="#" class="store-directions-bttn" aria-label="Directions to Jackson & Dearborn's Snack Shop">
+                                <svg width="26" height="26">
+                                    <use href="./Assets/icons.svg#turn-up-right-arrow" />
+                                </svg>
+                                <p>Directions</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="store-pin-wrapper clicked hidden" data-pin-clicked="snackShop" style="top: 56%; left: 38%;" aria-hidden="true">
+                    <img src="./Assets/Compressed/store-locator/store-pin-clicked.png" alt="">
+            </div>
+            <div class="zoom-bttns">
+                <button class="zoom-in" aria-label="Zoom in view of the store map">
+                    <svg width="22" height="22">
+                        <use href="./Assets/icons.svg#zoom-in"/>
+                    </svg>
+                </button>
+                <button class="zoom-out" aria-label="Zoom out view of the store map">
+                    <svg width="22" height="22">
+                        <use href="./Assets/icons.svg#zoom-out"/>
+                    </svg>
+                </button>
+            </div>
+            <!-- Mall Store Card -->
+            <div class="store-pin-wrapper" data-pin-default="mallStore" data-store="mallStore" style="top: 78%; left: 23%;">
+                <button class="store-pin" aria-label="Open Velvet Kernel - Water Tower Place store details card">
+                    <img src="./Assets/Compressed/store-locator/store-pin.png" alt="">
+                </button>
+            </div>
+            <div class="card-null-point" style="top:30%; left:0%">
+                <div class="store-details-card hidden" data-card="mallStore" data-store="mallStore" aria-label="Mall Store details in cards">
+                    <div class="store-card-grid">
+                        <div class="store-card-name">
+                            <h3>
+                                <span>Velvet Kernel -</span>
+                                <span>Water Tower Place</span>
+                            </h3>
+                            <p>Mall Location</p>
+                        </div>
+                        <div class="card-distance-marker">
+                            <svg width="27" height="8" class="distance-marker-icon"
+                                aria-label="Distance from location to Jackson & Dearborn's Snack Shop">
+                                <use href="./Assets/icons.svg#distance-marker" />
+                            </svg>
+                            <p>1.4 mi</p>
+                        </div>
+                        <button class="x-mark-container" data-store="mallStore" aria-label="Close store details card">
+                            <svg width="16" height="16" class="x-mark-icon">
+                                <use href="./Assets/icons.svg#x-mark" />
+                            </svg>
+                        </button>
+                        <div class="image-slice-container">
+                            <img src="./Assets/Compressed/store-locator/mallstore-cropped.png" alt="Velvet Kernel - Water Tower Place">
+                            <a href="#" class="store-directions-bttn" aria-label="Directions to Velvet Kernel - Water Tower Place store">
+                                <svg width="26" height="26">
+                                    <use href="./Assets/icons.svg#turn-up-right-arrow" />
+                                </svg>
+                                <p>Directions</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="store-pin-wrapper clicked hidden" data-pin-clicked="mallStore" style="top: 78%; left: 23%;" aria-hidden="true">
+                    <img src="./Assets/Compressed/store-locator/store-pin-clicked.png" alt="">
+            </div>
+            <!-- Navy Pier Card -->
+            <div class="store-pin-wrapper" data-pin-default="navyPier" data-store="navyPier" style="top: 48%; left: 23%;">
+                <button class="store-pin" aria-label="Open O'Hare Store -
+                Navy Pier & Dock details card">
+                    <img src="./Assets/Compressed/store-locator/store-pin.png" alt="">
+                </button>
+            </div>
+            <div class="card-null-point" style="top:0%; left:0%">
+                <div class="store-details-card hidden" data-card="navyPier" data-store="navyPier" aria-label="O'Hare Store details in cards">
+                    <div class="store-card-grid">
+                        <div class="store-card-name">
+                            <h3>
+                                <span>O'Hare Store -</span>
+                                <span>Navy Pier & Dock</span>
+                            </h3>
+                            <p>Authorized Retailer</p>
+                        </div>
+                        <div class="card-distance-marker">
+                            <svg width="27" height="8" class="distance-marker-icon"
+                                aria-label="Distance from location to Jackson & Dearborn's Snack Shop">
+                                <use href="./Assets/icons.svg#distance-marker" />
+                            </svg>
+                            <p>1.4 mi</p>
+                        </div>
+                        <button class="x-mark-container" data-store="navyPier" aria-label="Close store details card">
+                            <svg width="16" height="16" class="x-mark-icon">
+                                <use href="./Assets/icons.svg#x-mark" />
+                            </svg>
+                        </button>
+                        <div class="image-slice-container">
+                            <img src="./Assets/Compressed/store-locator/navypier-cropped.png" alt="O'Hare Store - Navy Pier & Dock">
+                            <a href="#" class="store-directions-bttn" aria-label="Directions to O'Hare Store - Navy Pier & Dock">
+                                <svg width="26" height="26">
+                                    <use href="./Assets/icons.svg#turn-up-right-arrow" />
+                                </svg>
+                                <p>Directions</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="store-pin-wrapper clicked hidden" data-pin-clicked="navyPier" style="top: 48%; left: 23%;" aria-hidden="true">
+                    <img src="./Assets/Compressed/store-locator/store-pin-clicked.png" alt="">
+            </div>
+    </section>
+    <!-- Store's further details block-->
+    <section class="store-details-container">
+        <ul class="store-details-block" aria-label="Store's further details in block">
+            <!-- Snack Shop block -->
+            <li class="store-specific-block" data-block="snackShop">
+                <div class="left-block">
+                    <h2>
+                        <span>Jackson & Dearborn's</span>
+                        <span>Snack Shop</span>
+                    </h2>
+                    <ul class="store-ratings" aria-label="Store ratings">
+                        <li>
+                            <svg width="15" height="15" class="star-icon">
+                                <use href="./Assets/icons.svg#star-icon"/>
+                            </svg>                       
+                        </li>
+                        <li>
+                            <svg width="15" height="15" class="star-icon">
+                                <use href="./Assets/icons.svg#star-icon"/>
+                            </svg>                       
+                        </li>
+                        <li>
+                            <svg width="15" height="15" class="star-icon">
+                                <use href="./Assets/icons.svg#star-icon"/>
+                            </svg>                       
+                        </li>
+                        <li>
+                            <svg width="15" height="15" class="star-icon">
+                                <use href="./Assets/icons.svg#star-icon"/>
+                            </svg>                       
+                        </li>
+                        <li class="half-star">
+                            <svg width="15" height="15" viewBox="0 0 20 20" class="star-icon" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="half-fill" x1="0" x2="1" y1="0" y2="0">
+                                    <stop offset="50%" stop-color="#FFC359" />
+                                    <stop offset="50%" stop-color="#E8E9E1" />
+                                    </linearGradient>
+                                </defs>
+                                <path fill="url(#half-fill)" fill-rule="evenodd"
+                                    d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z"
+                                    clip-rule="evenodd" />
+                            </svg>                      
+                        </li>
+                        <li>(<span class="total ratings">2</span>)</li>
+                    </ul>
+                    <h3 class="store-address">
+                        <span>48 W Jackson Blvd</span>
+                        <span>Chicago, IL 012345</span>
+                    </h3>
+                    <div class="store-phone">
+                        <p>(012) 345-6789</p>
+                    </div>
+                    <div class="store-website">
+                        <p>www.snackshop.com</p>
+                    </div>
+                </div>
+                <div class="right-block">
+                    <div class="block-distance-marker" aria-label="Distance from location to store">
+                        <svg width="27" height="8" class="distance-marker-icon"
+                        aria-label="Distance from location to Jackson & Dearborn's Snack Shop">
+                        <use href="./Assets/icons.svg#distance-marker" />
+                        </svg>
+                        <p>1.1 mi</p>
+                    </div>
+                    <div class="store-status">
+                        <h3>OPEN</h3>
+                    </div>
+                    <p class="store-hours">
+                        10 am to 8 pm
+                    </p>
+                    <ul class="ways-to-order">
+                        <li>Pickup Window</li>
+                        <li>UberEATS</li>
+                        <li>DoorDash</li>
+                        <li>Mobile Ordering</li>
+                    </ul>
+                </div>
+            </li>
+            <!-- Mall Store block -->
+            <li class="store-specific-block hidden" data-block="mallStore">
+                <div class="left-block">
+                    <h2>
+                        <span>Velvet Kernel -</span>
+                        <span>Water Tower Place</span>
+                    </h2>
+                    <ul class="store-ratings" aria-label="Store ratings">
+                        <li>
+                            <svg width="15" height="15" class="star-icon">
+                                <use href="./Assets/icons.svg#star-icon"/>
+                            </svg>                       
+                        </li>
+                        <li>
+                            <svg width="15" height="15" class="star-icon">
+                                <use href="./Assets/icons.svg#star-icon"/>
+                            </svg>                       
+                        </li>
+                        <li>
+                            <svg width="15" height="15" class="star-icon">
+                                <use href="./Assets/icons.svg#star-icon"/>
+                            </svg>                       
+                        </li>
+                        <li>
+                            <svg width="15" height="15" class="star-icon">
+                                <use href="./Assets/icons.svg#star-icon"/>
+                            </svg>                       
+                        </li>
+                        <li class="empty-star">
+                            <svg width="15" height="15" viewBox="0 0 20 20" class="star-icon" xmlns="http://www.w3.org/2000/svg"
+                            style="color: #E8E9E1;">
+                                <use href="./Assets/icons.svg#star-icon"/>
+                            </svg>                      
+                        </li>
+                        <li>(<span class="total ratings">5</span>)</li>
+                    </ul>
+                    <h3 class="store-address">
+                        <span>772 Michigan Ave</span>
+                        <span>Chicago, IL 01234</span>
+                    </h3>
+                    <div class="store-phone">
+                        <p>(123) 456-7890</p>
+                    </div>
+                    <div class="store-website">
+                        <p>www.mallstore.com</p>
+                    </div>
+                </div>
+                <div class="right-block">
+                    <div class="block-distance-marker" aria-label="Distance from location to store">
+                        <svg width="27" height="8" class="distance-marker-icon"
+                        aria-label="Distance from location to Jackson & Dearborn's Snack Shop">
+                        <use href="./Assets/icons.svg#distance-marker" />
+                        </svg>
+                        <p>1.4 mi</p>
+                    </div>
+                    <div class="store-status">
+                        <h3>OPEN</h3>
+                    </div>
+                    <p class="store-hours">
+                        10 am to 6 pm
+                    </p>
+                    <ul class="ways-to-order">
+                        <li>Pickup Window</li>
+                        <li>Mall Location</li>
+                        <li>UberEATS</li>
+                        <li>Mobile Ordering</li>
+                    </ul>
+                </div>
+            </li>
+            <!-- Navy Pier block -->
+            <li class="store-specific-block hidden" data-block="navyPier">
+                <div class="left-block">
+                    <h2>
+                        <span>O'Hare Store -</span>
+                        <span>Navy Pier & Dock</span>
+                    </h2>
+                    <ul class="store-ratings" aria-label="Store ratings">
+                        <li>
+                            <svg width="15" height="15" class="star-icon">
+                                <use href="./Assets/icons.svg#star-icon"/>
+                            </svg>                       
+                        </li>
+                        <li>
+                            <svg width="15" height="15" class="star-icon">
+                                <use href="./Assets/icons.svg#star-icon"/>
+                            </svg>                       
+                        </li>
+                        <li>
+                            <svg width="15" height="15" class="star-icon">
+                                <use href="./Assets/icons.svg#star-icon"/>
+                            </svg>                       
+                        </li>
+                        <li>
+                            <svg width="15" height="15" class="star-icon">
+                                <use href="./Assets/icons.svg#star-icon"/>
+                            </svg>                       
+                        </li>
+                        <li>
+                            <svg width="15" height="15" class="star-icon" style="color: #FFC359">
+                                <use href="./Assets/icons.svg#star-icon"/>
+                            </svg>                       
+                        </li>
+                        <li>(<span class="total ratings">3</span>)</li>
+                    </ul>
+                    <h3 class="store-address">
+                        <span>800 E Grand Ave</span>
+                        <span>Chicago, IL 12345</span>
+                    </h3>
+                    <div class="store-phone">
+                        <p>(321) 654-0987</p>
+                    </div>
+                    <div class="store-website">
+                        <p>www.pieranddock.com</p>
+                    </div>
+                </div>
+                <div class="right-block">
+                    <div class="block-distance-marker" aria-label="Distance from location to store">
+                        <svg width="27" height="8" class="distance-marker-icon"
+                        aria-label="Distance from location to Jackson & Dearborn's Snack Shop">
+                        <use href="./Assets/icons.svg#distance-marker" />
+                        </svg>
+                        <p>1.9 mi</p>
+                    </div>
+                    <div class="store-status">
+                        <h3>OPEN</h3>
+                    </div>
+                    <p class="store-hours">
+                        10 am to 8 pm
+                    </p>
+                    <ul class="ways-to-order">
+                        <li>Pickup Window</li>
+                        <li>Drive-Thru</li>
+                        <li>Parking Lot</li>
+                        <li>Mobile Ordering</li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+        <div class="store-details-bttn">
+            <button id="storeDetails" class="store-details" aria-label="Launch store specific webpage">Store Details</button>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="contact-us">
+            <h2>Contact Us</h2>
+            <p>
+                <span><img src="./Assets/Compressed/SVG/footer-icons/phone-icon-light.svg" alt=""></span>
+                123-456-7890
+            </p>
+            <p>
+                <span>
+                    <img src="./Assets/Compressed/SVG/footer-icons/mail-icon-light.svg" alt="">
+                </span>
+                support@velvetkernel.com
+            </p>
+        </div>
+        <button aria-label="Scroll to the top" class="double-chevron-btn">
+            <svg width="45" height="45">
+                <use href="./Assets/icons.svg#dbl-chevron-up"/>
+            </svg>
+        </button>
+        <div class="lightLogo" aria-hidden="true">
+            <img src="./Assets/Compressed/SVG/lightLogo.svg" alt="">
+        </div>
+        <div class="socials-container">
+            <ul class="socials" aria-label="Social Media Links">
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Tiktok</a></li>
+                <li><a href="#">Facebook</a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- left nav window overlay -->
+    <div class="left-overlay-wrapper is-closed">
+        <aside class="left-overlay-window">
+           <div class="left-overlay-bar">
+               <button class="x-icon-container"aria-label="Close overlay window">
+                   <svg width="35" height="35" class="aside-x-bttn">
+                    <use href="./Assets/icons.svg#x-mark"/>
+                   </svg>
+               </button>
+           </div>
+           <ul class="overlay-menu-btns">
+               <li>
+                   <a href="#">Why Velvet Kernel?</a>
+                   <button aria-label="Go to Explore Flavors page" class="overlay-btn-right">
+                       <svg width="45" height="45">
+                        <use href="./Assets/icons.svg#chevron-right"></use>
+                       </svg>
+                    </button>
+               </li>
+               <li>
+                   <a href="#">The Pop Process</a>
+                   <button aria-label="Go to Process page" class="overlay-btn-right">
+                       <svg width="45" height="45">
+                        <use href="./Assets/icons.svg#chevron-right"></use>
+                       </svg>
+                   </button>
+               </li>
+               <li>
+                   <a href="#">Store Locator</a>
+                   <button aria-label="Go to Store Locator" class="overlay-btn-right">
+                       <svg width="45" height="45">
+                        <use href="./Assets/icons.svg#chevron-right"></use>
+                       </svg>
+                   </button>
+               </li>
+           </ul>
+           <button class="left-overlay-btn" aria-label="Go to Product page">Shop Now</button>
+           <div class="left-overlay-contacts">
+               <div class="contact-info">
+                   <p>123-456-7890</p>
+                   <p>support@velvetkernel.com</p>
+               </div>
+               <img src="./Assets/Compressed/left-overlay/bowl-footer.png" aria-hidden="true" aria-label="left window overlay close button" alt="">
+           </div>
+        </aside>
+    </div>
+</body>
+</html>
