@@ -4,6 +4,7 @@ A collection of front-end projects I built from scratch to learn HTML, CSS, and 
 
 ## 📚 Project List
 
+- [Velvet Kernel](./Velvet_Kernel/README.md)
 - [Bee Side](./Bee_Side/README.md)
 - [Veritable Whiskey](./Veritable_Whiskey/README.md)
 - [Coffee Pilgrims](./Coffee_Pilgrims/README.md)
