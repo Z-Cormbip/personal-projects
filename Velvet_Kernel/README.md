@@ -2,6 +2,8 @@
 
 **Velvet Kernel** is a fictional gourmet popcorn brand. This project explores a mobile-first, responsive layout with a strong visual identity, built using HTML, SCSS (Sass), and JavaScript. The brand color `#a5b6cb` (Cadet Blue at 80% value) is used consistently throughout the design.
 
+> **📸 Image Disclaimer**  
+> *I do not own the rights to all images or illustrations used in this project. They are included strictly for educational and demonstration purposes. All image credits go to the original creators: [Garrett Popcorn Co.](www.garrettpopcorn.com)*
 
 ## 🧠 What I Learned
 

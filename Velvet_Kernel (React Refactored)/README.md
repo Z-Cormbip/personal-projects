@@ -4,6 +4,9 @@ This project is a full refactor of my original *Velvet Kernel* popcorn website, 
 
 Along the way, I explored concepts like React hooks, form validation with `zod`, modular design patterns, and the benefits of scalable frontend frameworks.
 
+> **📸 Image Disclaimer**  
+> *I do not own the rights to all images or illustrations used in this project. They are included strictly for educational and demonstration purposes. All image credits go to the original creators: [Garrett Popcorn Co.](www.garrettpopcorn.com)*
+
 ## 🧠 What I Learned
 
 ### ⚙️ Tailwind CSS
