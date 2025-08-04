@@ -1,0 +1,265 @@
+@import "tailwindcss";
+
+* {
+  outline: red dashed 1px;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-light);
+  }
+
+  h1 {
+    font-family: var(--font-serif);
+    color: var(--color-dark);
+  }
+
+  h2,
+  h3,
+  p,
+  li {
+    font-family: var(--font-sans);
+    font-weight: 300;
+    font-size: var(--text-txtdf);
+    color: var(--color-dark);
+  }
+
+  i,
+  strong {
+    font-weight: 500;
+  }
+}
+
+@theme {
+  --font-serif: "Boska", Georgia, "Times New Roman", Times, serif;
+  --font-sans: "Switzer", Arial, Helvetica, sans-serif;
+  --color-primary: #a5b6cb;
+  --color-secondary: #3a4d63;
+  --color-accent: #ffc359;
+  --color-dark: #131f2f;
+  --color-subtxt: #314358;
+  --color-btn: #344d68;
+  --color-light: #fefff5;
+  --color-light-subtxt: #dadbd1;
+  --text-txtdf: clamp(1rem, 5vw, 2rem);
+  --text-txt-xsm: clamp(0.875rem, 4.375vw, 1.7rem);
+  --text-txt-xxsm: clamp(0.75rem, 3.75vw, 1.5rem);
+  --text-txt-xxxsm: clamp(0.625rem, 3.125vw, 1.25rem);
+  --text-txt-md: clamp(1.2rem, 3.75vw, 2rem);
+  --text-txt-lg: clamp(1.25rem, 6.25vw, 2.5rem);
+}
+
+@utility is-closed {
+  opacity: 0;
+  pointer-events: none;
+}
+
+@utility flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@utility flex-center-y {
+  display: flex;
+  align-items: center;
+}
+
+@utility flex-col-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@utility flex-center-gap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@utility flex-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@utility flex-col-gap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@utility nudge-anime {
+  @apply transition-transform duration-200 ease-out;
+}
+
+@utility accent-line-bot {
+  @apply before:absolute before:bg-accent before:left-0 before:right-0 before:bottom-1 before:w-full before:h-[1px];
+}
+
+@utility accent-line-top {
+  @apply before:absolute before:bg-accent before:left-0 before:right-0 before:top-1 before:w-full before:h-[1px];
+}
+
+@layer components {
+  .nav-btn {
+    @apply cursor-pointer p-1.5 rounded-md text-light border-2 border-transparent transition duration-200 ease-out;
+
+    > svg {
+      @apply size-8 stroke-light;
+    }
+
+    @variant hover {
+      background-color: --alpha(var(--color-light) / 20%);
+      filter: brightness(1.2) saturate(1.2);
+    }
+    @variant focus {
+      border-color: --alpha(var(--color-light) / 30%);
+      filter: brightness(1.2) saturate(1.2);
+    }
+    @variant active {
+      background-color: --alpha(var(--color-light) / 40%);
+      filter: brightness(1.2) saturate(1.2);
+    }
+  }
+
+  .aside-block {
+    @apply flex-center-gap px-8 py-2 bg-gray-100 border-b-2 border-gray-500;
+
+    > svg:last-child {
+      @apply size-8 stroke-dark drop-shadow-md drop-shadow-dark/50;
+    }
+  }
+
+  .cta-btn {
+    @apply bg-btn text-light px-5 py-2 font-medium rounded-full cursor-pointer border-4 border-transparent transition-colors duration-200 ease-out text-txtdf;
+
+    @variant hover {
+      background-color: #315172;
+      filter: brightness(1.2) saturate(1.2);
+    }
+
+    @variant focus {
+      border-color: #396794;
+      filter: brightness(1.2) saturate(1.2);
+    }
+
+    @variant active {
+      background-color: #3b6c9c;
+      filter: brightness(1.2) saturate(1.2);
+    }
+  }
+
+  .brand-bars {
+    @apply flex gap-2.5 items-stretch;
+
+    > li:nth-child(odd) {
+      @apply bg-primary w-2.5;
+    }
+
+    > li:nth-child(2) {
+      @apply bg-secondary relative w-2.5 before:absolute before:bg-accent before:h-full before:w-[1px] before:left-1/2 before:bottom-0;
+    }
+  }
+
+  .aside-design {
+    @apply flex flex-col gap-2 absolute top-1/6;
+  }
+
+  .glass-btn {
+    @apply absolute bottom-4 right-4 flex-col-center rounded-sm size-12 backdrop-blur-[2.5px] bg-light/40 transition duration-200 ease-out;
+
+    @variant hover {
+      filter: brightness(1.2) saturate(1.2);
+    }
+
+    @variant focus {
+      filter: brightness(1.4) saturate(1.4);
+    }
+
+    @variant active {
+      filter: brightness(1.6) saturate(1.6);
+    }
+  }
+
+  .card-xbtn {
+    @apply cursor-pointer flex-center size-12 justify-self-end rounded-tr-[10px] transition-colors duration-200 ease-out;
+
+    @variant hover {
+      @apply bg-[#595959]/10;
+    }
+  }
+
+  .store-pin {
+    @apply cursor-pointer transition duration-200 ease-out;
+
+    @variant hover {
+      filter: brightness(1.2) saturate(1.2);
+    }
+
+    @variant focus {
+      filter: brightness(1.4) saturate(1.4);
+    }
+
+    @variant active {
+      filter: brightness(1.6) saturate(1.6);
+    }
+  }
+
+  .zoom-btns {
+    @apply cursor-pointer bg-[#E8E9E1] p-3 transition-colors duration-200 ease-out;
+
+    > svg {
+      @apply size-6 text-subtxt/80;
+    }
+
+    @variant hover {
+      background-color: #dcddd2;
+
+      > svg {
+        color: #595959;
+      }
+    }
+  }
+
+  .search-input {
+    @apply px-3 py-0.5 rounded-md w-full bg-[#E8E9E1] border-[#B2B2B2];
+
+    @variant focus {
+      outline: none;
+      background-color: #d2d2d2;
+    }
+  }
+
+  .locate-btn {
+    @apply flex-center gap-2.5 rounded-lg cursor-pointer text-txt-xsm py-2 px-4 mx-auto transition-colors duration-300 ease-out text-[#707070];
+
+    @variant hover {
+      background-color: #d2d2d2;
+      color: #595959;
+
+      > svg {
+        stroke: #595959;
+      }
+    }
+  }
+
+  .suggested-loc {
+    @apply flex-center-y gap-1.5 py-1.5 px-2.5 mt-2 cursor-pointer rounded-r-lg transition-colors duration-300 ease-out;
+
+    @variant hover {
+      background-color: #d2d2d2;
+    }
+  }
+
+  .search-ext {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.5rem 0.8rem 0.5rem 0;
+    position: relative;
+
+    &::before {
+      @apply absolute content-[""] top-0 left-0 h-px w-full bg-[#c7c7c7];
+    }
+  }
+}
