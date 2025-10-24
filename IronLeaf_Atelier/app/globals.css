@@ -1,0 +1,63 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+:root {
+  --background: #e9ebf8;
+  --foreground: #dadeeb;
+  --border: #bbbbbb;
+  --text: #222222;
+  --color-primary: #e25c3b;
+  --color-secondary: #3f4f00;
+  --accent: #f7b32b;
+}
+
+@layer base {
+  body {
+    background-color: var(--background);
+    color: var(--text);
+  }
+  h1 {
+    font-family: var(--font-zodiak);
+    color: var(--color-secondary);
+    font-weight: 600;
+  }
+  h3 {
+    font-family: var(--font-zodiak);
+    font-style: italic;
+    font-size: 18px;
+  }
+  p,
+  h2,
+  figcaption,
+  ul,
+  button {
+    font-family: var(--font-jakarta);
+  }
+}
+
+@theme {
+  --font-zodiak: var(--font-zodiak);
+  --font-sans: var(--font-jakarta);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--color-primary);
+  --color-secondary: var(--color-secondary);
+  --color-border: var(--border);
+  --color-stars: var(--accent);
+}
+
+@utility stitched {
+  &::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 100%;
+    border-top: 2px dashed var(--border);
+  }
+}
+
+@utility headline {
+  @apply text-3xl text-shadow-md
+  text-shadow-slate-900/25 -rotate-90 inline-block absolute origin-top-left;
+}
