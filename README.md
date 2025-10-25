@@ -4,11 +4,11 @@ A collection of front-end projects I built from scratch to learn HTML, CSS, and 
 
 ## 📚 Project List
 
-- [Ironleaf Atelier](./IronLeaf_Atelier/README.md)
-- [Velvet Kernel](./Velvet_Kernel/README.md)
-- [Bee Side](./Bee_Side/README.md)
-- [Veritable Whiskey](./Veritable_Whiskey/README.md)
-- [Coffee Pilgrims](./Coffee_Pilgrims/README.md)
+1. [Ironleaf Atelier](./IronLeaf_Atelier/README.md)
+2. [Velvet Kernel](./Velvet_Kernel/README.md)
+3. [Bee Side](./Bee_Side/README.md)
+4. [Veritable Whiskey](./Veritable_Whiskey/README.md)
+5. [Coffee Pilgrims](./Coffee_Pilgrims/README.md)
 
 > **📸 Image Disclaimer**  
 > *I do not own the rights to all images or illustrations used in these projects. They are included strictly for educational and demonstration purposes. All image credits go to the original creators.
