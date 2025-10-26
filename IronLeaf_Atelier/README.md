@@ -26,7 +26,7 @@ This project demonstrates my learning in UI integration, Next.js optimization, a
 
 - Studied visual design principles — focusing on **shape, closure, leading lines, negative space, contrast, and hierarchy** — to build more intentional layouts.
 - Applied these fundamentals throughout the site for better flow and readability.
-- 🧾 View the detailed [Case Study](casestudylink)
+- 🧾 View the detailed [Design Case Study](https://github.com/Z-Cormbip/design-case-studies)
 
 ## 📸 Preview
 
